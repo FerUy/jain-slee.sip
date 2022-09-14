@@ -28,6 +28,7 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
+*.xml.versionsBackup
 # Mobicents
 ${env.JBOSS_HOME}
 ${release.dir}
