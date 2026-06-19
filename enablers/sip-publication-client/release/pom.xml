@@ -26,7 +26,7 @@
 									<goal>run</goal>
 								</goals>
 								<configuration>
-									<tasks>
+									<target>
     								<copy overwrite="true" todir="${release.dir}/enablers/sip-publication-client">
     									<fileset dir="${basedir}/../du/target">
     										<include name="**.jar" />
@@ -41,7 +41,7 @@
                       						<filter token="JBOSS.CONFIG" value="${node}" />
     									</filterset>
     								</copy>
-									</tasks>
+									</target>
 								</configuration>
 							</execution>
 						</executions>
