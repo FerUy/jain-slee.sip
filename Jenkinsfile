@@ -81,7 +81,7 @@ pipeline {
             when{anyOf {branch 'master'; branch 'release'}}
 			steps {
 				sh "mkdir -p /var/www/html/NAIKERI/jain-slee.sip/${SIP_BUILD_VERSION}/"
-                sh "cp ${SIP_BUILD_VERSION}/ /var/www/html/NAIKERI/jain-slee.sip/${SIP_BUILD_VERSION}/"
+                sh "cp -r ${SIP_BUILD_VERSION}/ /var/www/html/NAIKERI/jain-slee.sip/${SIP_BUILD_VERSION}/"
                 /*sshagent (credentials: ['4e708f2a-8b37-414f-a6d4-787690b87738']) {
                     sh 'scp -r ${SIP_BUILD_VERSION}/ root@127.0.0.1:/var/www/html/NAIKERI/jain-slee.sip/${SIP_BUILD_VERSION}/'
                 }*/
